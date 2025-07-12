@@ -30,7 +30,7 @@ Database	   MongoDB Atlas
 
 ----------------------------------------------------------------------------
 
-🔹 Live Links:(may not be sam elooking as webpage as it was styled afterwards)
+🔹 Live Links:(may not be same looking as webpage as it was styled afterwards)
 
 🌐 Frontend: https://skillswap-frontend-eight.vercel.app
 
