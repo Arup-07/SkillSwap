@@ -20,43 +20,24 @@
   </header>
 
   <main class="container">
-    <h3>Find Users by Skill</h3>
-    <input type="text" id="search" placeholder="Type a skill (e.g., Excel)" class="card" style="width: 100%; padding: 0.7rem; margin-bottom: 1rem;" />
-    <div class="cards" id="browse-results">
-      <!-- Filtered users will appear here -->
+    <h3>Find Users by Skill or Availability</h3>
+    
+    <div class="filter-controls">
+      <input type="text" id="search" placeholder="Search skills..." />
+      <div id="suggestions" class="suggestions-box"></div>
+
+      <select id="availabilityFilter">
+        <option value="All">All Availabilities</option>
+        <option>Weekends</option>
+        <option>Evenings</option>
+        <option>Flexible</option>
+      </select>
     </div>
+
+    <div class="cards" id="browse-results"></div>
   </main>
 
   <footer><div class="container">&copy; 2025 SkillSwap</div></footer>
-
   <script src="script.js"></script>
-  <script>
-    const searchInput = document.getElementById("search");
-    const browseResults = document.getElementById("browse-results");
-
-    function renderFilteredUsers(skill) {
-      browseResults.innerHTML = '';
-      users.filter(user => 
-        user.skillsOffered.join(',').toLowerCase().includes(skill.toLowerCase()) ||
-        user.skillsWanted.join(',').toLowerCase().includes(skill.toLowerCase())
-      ).forEach(user => {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <h4>${user.name}</h4>
-          <p><strong>Offers:</strong> ${user.skillsOffered.join(', ')}</p>
-          <p><strong>Wants:</strong> ${user.skillsWanted.join(', ')}</p>
-          <p><strong>Available:</strong> ${user.availability}</p>
-        `;
-        browseResults.appendChild(card);
-      });
-    }
-
-    searchInput.addEventListener("input", (e) => {
-      renderFilteredUsers(e.target.value);
-    });
-
-    renderFilteredUsers('');
-  </script>
 </body>
 </html>
