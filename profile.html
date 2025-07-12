@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My SkillSwap Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h1>Skill<span>Swap</span></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse Skills</a>
+        <a href="#" class="active">My Profile</a>
+        <a href="requests.html">Requests</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h3>Edit Your Profile</h3>
+    <form class="card" style="background: rgba(255,255,255,0.1);">
+      <label>Name: <input type="text" placeholder="Your name" /></label><br><br>
+      <label>Skills Offered:<br><input type="text" placeholder="e.g. Web Design, Excel" /></label><br><br>
+      <label>Skills Wanted:<br><input type="text" placeholder="e.g. Photoshop, Public Speaking" /></label><br><br>
+      <label>Availability:<br>
+        <select>
+          <option>Weekends</option>
+          <option>Evenings</option>
+          <option>Flexible</option>
+        </select>
+      </label><br><br>
+      <button class="btn">Save Profile</button>
+    </form>
+  </main>
+
+  <footer><div class="container">&copy; 2025 SkillSwap</div></footer>
+</body>
+</html>
