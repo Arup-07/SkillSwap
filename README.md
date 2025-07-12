@@ -20,13 +20,18 @@ What It Does:
 
 📱 Fully responsive UI for mobile and desktop use
 
+------------------------------------------------------------------------------------
+
 🔹 Tech Stack:
 Layer	              Tool
 Frontend	   HTML, CSS, JavaScript
 Backend	     Node.js, Express
 Database	   MongoDB Atlas
 
+----------------------------------------------------------------------------
+
 🔹 Live Links:(may not be sam elooking as webpage as it was styled afterwards)
+
 🌐 Frontend: https://skillswap-frontend-eight.vercel.app
 
 🔧 Backend: https://skillswap-backend-2.onrender.com
