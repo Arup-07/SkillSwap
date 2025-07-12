@@ -21,14 +21,16 @@ const users = [
 
 const container = document.getElementById("user-cards");
 
-users.forEach((user) => {
-  const card = document.createElement("div");
-  card.className = "card";
-  card.innerHTML = `
-    <h4>${user.name}</h4>
-    <p><strong>Offers:</strong> ${user.skillsOffered.join(", ")}</p>
-    <p><strong>Wants:</strong> ${user.skillsWanted.join(", ")}</p>
-    <p><strong>Available:</strong> ${user.availability}</p>
-  `;
-  container.appendChild(card);
-});
+if (container) {
+  users.forEach((user) => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <h4>${user.name}</h4>
+      <p><strong>Offers:</strong> ${user.skillsOffered.join(", ")}</p>
+      <p><strong>Wants:</strong> ${user.skillsWanted.join(", ")}</p>
+      <p><strong>Available:</strong> ${user.availability}</p>
+    `;
+    container.appendChild(card);
+  });
+}
